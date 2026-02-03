@@ -4,13 +4,13 @@ const message = document.getElementById("loveMessage");
 const music = document.getElementById("bgMusic");
 
 const voices = [
-  "Galat button hai ye",
-  "YES dabao na ullu"
+  "This is wrong button you fool",
+  
 ];
 
 function speak(text) {
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = "hi-IN";
+  u.lang = "eng-IN";
   speechSynthesis.cancel();
   speechSynthesis.speak(u);
 }
